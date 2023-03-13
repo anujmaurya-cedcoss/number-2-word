@@ -57,7 +57,12 @@ function lessthan20(num, i) {
 // when the number is more than 20
 function morethan20(num, i) {
     let ret = " ";
-    ret += after20[Math.floor(num/10) * 10] + till20[Math.floor(num % 10)];
+
+    ret += after20[Math.floor(num/10) * 10];
+    if(till20[Math.floor(num % 10)] > 0) {
+        ret += " ";
+        ret += till20[Math.floor(num % 10)];
+    }
     ret += " ";
     ret += power[i];
 
