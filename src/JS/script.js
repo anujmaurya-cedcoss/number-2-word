@@ -67,7 +67,7 @@ function morethan20(num, i) {
 function toWord() {
     let num = document.getElementById("number").value;
     let val = num;
-    const arr = [];
+        const arr = [];
     while(num >= 1) {
         arr.push(num % 10);
         num = Math.floor(num/10);
