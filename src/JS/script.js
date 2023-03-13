@@ -92,11 +92,11 @@ function toWord() {
         } else {
             ans = morethan20(dig, i) + ans;
         }
-
-        if(val < 1) {
-            ans = "zero";
-        }
-        console.log(val);
     }
+
+    if(val < 1) {
+        ans = "zero";
+    }
+    console.log(val);
     document.getElementById("output").innerHTML = ans;
 }
