@@ -98,10 +98,15 @@ function toWord() {
             ans = morethan20(dig, i) + ans;
         }
     }
-
-    if(val < 1) {
-        ans = "zero";
+    if(val < 0) {
+        document.getElementById("output").innerHTML = "please enter positive value";
+    } else {
+        if(val < 1) {
+            ans = "zero";
+        } else if(val.length < 1) {
+            ans = "";
+        }
+        console.log(val);
+        document.getElementById("output").innerHTML = ans;
     }
-    console.log(val);
-    document.getElementById("output").innerHTML = ans;
 }
