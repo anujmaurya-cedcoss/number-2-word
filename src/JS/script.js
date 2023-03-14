@@ -59,7 +59,7 @@ function morethan20(num, i) {
     let ret = " ";
 
     ret += after20[Math.floor(num/10) * 10];
-    if(till20[Math.floor(num % 10)] > 0) {
+    if(Math.floor(num % 10) > 0) {
         ret += " ";
         ret += till20[Math.floor(num % 10)];
     }
@@ -103,7 +103,8 @@ function toWord() {
     } else {
         if(val < 1) {
             ans = "zero";
-        } else if(val.length < 1) {
+        } 
+        if(val.length < 1) {
             ans = "";
         }
         console.log(val);
